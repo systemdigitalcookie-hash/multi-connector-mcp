@@ -1,0 +1,37 @@
+{
+  "name": "notion-multi-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that connects Claude to multiple client Notion workspaces",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/systemdigitalcookie-hash/multi-connector-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/systemdigitalcookie-hash/multi-connector-mcp/issues"
+  },
+  "homepage": "https://github.com/systemdigitalcookie-hash/multi-connector-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "@notionhq/client": "^5.27.0",
+    "express": "^5.2.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}
